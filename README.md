@@ -1,6 +1,6 @@
 # IRIS - Advanced Desktop AI Voice & Vision Assistant 🔥
 
-<video src="Images/Create_a_seamless_looping_anim.mp4" autoplay loop muted playsinline width="100%"></video>
+<img src="Images/Create_a_seamless_looping_anim.gif" alt="IRIS Assistant Banner" width="100%">
 
 **IRIS** is a state-of-the-art, highly intelligent Desktop AI Voice & Vision Companion built with Python. It features Universal NOW MODE for real-time visual UI searching and direct element interaction across desktop apps and browsers, native Windows settings toggles, intelligence layers, and complete system automation.
 
