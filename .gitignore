@@ -1,0 +1,7 @@
+.venv
+/.idea
+__pycache__/
+*.pyc
+screen_temp.png
+now_screen_temp.png
+assistant_name.txt
