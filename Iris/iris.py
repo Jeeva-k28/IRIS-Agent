@@ -21,7 +21,10 @@ import re
 import time
 import win32gui
 import win32api
-import pytesseract
+try:
+    import pytesseract
+except Exception:
+    pytesseract = None
 from PIL import Image
 from ddgs import DDGS
 from g4f.client import Client
@@ -898,10 +901,11 @@ def explain_current_screen() -> None:
     try:
         img = pyautogui.screenshot()
         img.save(temp_path)
-        try:
-            ocr_text = pytesseract.image_to_string(Image.open(temp_path)).strip()
-        except Exception:
-            pass
+        if pytesseract:
+            try:
+                ocr_text = pytesseract.image_to_string(Image.open(temp_path)).strip()
+            except Exception:
+                pass
 
         if os.path.exists(temp_path):
             try:
